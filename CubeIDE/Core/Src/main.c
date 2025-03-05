@@ -57,6 +57,7 @@ static void MX_GPIO_Init(void);
 static void MX_TIM7_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_SPI2_Init(void);
+static void MX_USB_DEVICE_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
