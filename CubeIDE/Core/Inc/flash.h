@@ -20,22 +20,22 @@ typedef struct
 void reset_ic(SPI_HandleTypeDef *hspi1, int flash_chip_num);
 void flash_read_jedec_id(SPI_HandleTypeDef *hspi1, int flash_chip_num);
 
-const IC_Pin FLASH_P_HOLD = (Flash_IC_Pin){.pin_letter = GPIOC, .pin_num = GPIO_PIN_6};
-const IC_Pin FLASH_P_CHIP_SELECT = (Flash_IC_Pin){.pin_letter = GPIOA, .pin_num = GPIO_PIN_0};
-const IC_Pin FLASH_P_WRITE_PROTECT = (Flash_IC_Pin){.pin_letter = GPIC, .pin_num = GPIO_PIN_2};
+extern const IC_Pin FLASH_P_HOLD;
+extern const IC_Pin FLASH_P_CHIP_SELECT;
+extern const IC_Pin FLASH_P_WRITE_PROTECT;
 
-const uint8_t FLASH_RESET = 0xFF;
-const uint8_t FLASH_WRITE_ENABLE = 0x06;
-const uint8_t FLASH_WRITE_DISABLE = 0x04;
-const uint8_t FLASH_PAGE_READ = 0x13;
-const uint8_t FLASH_READ_FROM_CACHE = 0x03;
-const uint8_t FLASH_PROGRAM_EXECUTE = 0x10;
-const uint8_t FLASH_PROGRAM_LOAD = 0x02;
-const uint8_t FLASH_PROGRAM_LOAD_RANDOM = 0x84;
-const uint8_t FLASH_BLOCK_ERASE = 0xD8;
-const uint8_t FLASH_READ_STATUS_REGISTER = 0x0F;
-const uint8_t FLASH_WRITE_STATUS_REGISTER = 0x1F;
-const uint8_t FLASH_READ_JEDEC_ID = 0x9F;
+extern const uint8_t FLASH_RESET;
+extern const uint8_t FLASH_WRITE_ENABLE;
+extern const uint8_t FLASH_WRITE_DISABLE;
+extern const uint8_t FLASH_PAGE_READ;
+extern const uint8_t FLASH_READ_FROM_CACHE;
+extern const uint8_t FLASH_PROGRAM_EXECUTE;
+extern const uint8_t FLASH_PROGRAM_LOAD;
+extern const uint8_t FLASH_PROGRAM_LOAD_RANDOM;
+extern const uint8_t FLASH_BLOCK_ERASE;
+extern const uint8_t FLASH_READ_STATUS_REGISTER;
+extern const uint8_t FLASH_WRITE_STATUS_REGISTER;
+extern const uint8_t FLASH_READ_JEDEC_ID[5];
 
 
 #endif /* INC_FLASH_H_ */
